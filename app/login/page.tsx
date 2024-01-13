@@ -32,18 +32,18 @@ export default function LoginPage() {
                     <Input
                         type="email"
                         label="Email"
-                        variant="bordered"
+                        variant="underlined"
                         isInvalid={!isValidMail}
                         onChange={handleMailChange}
                         errorMessage={isValidMail ? null : "Please enter a valid email"}
                         className="max-w-s"
                     />
                 </div>
-                <div className="mt-1">
+                <div className="mt-2">
                     <Input
                         type={isVisiblePassword ? "text" : "password"}
                         label="Password"
-                        variant="bordered"
+                        variant="underlined"
                         endContent={
                             <button className="focus:outline-none" type="button" onClick={togglePaswordVisivility}>
                                 {isVisiblePassword ? (
