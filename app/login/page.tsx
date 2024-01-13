@@ -12,12 +12,7 @@ import {EyeSlashFilledIcon} from "@/components/icons/EyeSlashFilledIcon";
 
 export default function LoginPage() {
 
-    const [isValidMail, setIsValidMail] = useState(false);
     const [isVisiblePassword, setIsVisiblePassword] = useState(false);
-
-    const handleMailChange = (e: React.ChangeEvent<HTMLInputElement>) => {
-        setIsValidMail(emailValidator(e.currentTarget.value));
-    }
 
     const togglePaswordVisivility = () => {setIsVisiblePassword(!isVisiblePassword)};
 
@@ -30,17 +25,16 @@ export default function LoginPage() {
             <div className="w-full mt-5 boder">
                 <div>
                     <Input
+                        isRequired={true}
                         type="email"
                         label="Email"
                         variant="underlined"
-                        isInvalid={!isValidMail}
-                        onChange={handleMailChange}
-                        errorMessage={isValidMail ? null : "Please enter a valid email"}
                         className="max-w-s"
                     />
                 </div>
                 <div className="mt-2">
                     <Input
+                        isRequired={true}
                         type={isVisiblePassword ? "text" : "password"}
                         label="Password"
                         variant="underlined"
