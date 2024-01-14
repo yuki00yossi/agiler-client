@@ -1,7 +1,7 @@
 export type SiteConfig = typeof siteConfig;
 
 export const siteConfig = {
-	name: "Next.js + NextUI",
+	name: "Agiler",
 	description: "Make beautiful websites regardless of your design experience.",
 	navItems: [
 		{
@@ -9,20 +9,24 @@ export const siteConfig = {
 			href: "/",
 		},
 		{
-			label: "Docs",
-			href: "/docs",
+			label: "プロジェクト",
+			href: "/projects",
 		},
 		{
-			label: "Pricing",
-			href: "/pricing",
+			label: "チケット",
+			href: "/tickets",
 		},
 		{
-			label: "Blog",
-			href: "/blog",
+			label: "ガントチャート",
+			href: "/chart/gant",
 		},
 		{
-			label: "About",
-			href: "/about",
+			label: "フォーラム",
+			href: "/forum",
+		},
+		{
+			label: "Wiki",
+			href: "/",
 		},
 		{
 			label: "ログイン",
