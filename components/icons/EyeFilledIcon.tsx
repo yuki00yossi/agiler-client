@@ -1,6 +1,13 @@
-import { Props } from "@nextui-org/navbar/dist/navbar-menu-toggle";
 import React from "react";
-export const EyeFilledIcon = () => (
+
+
+/** Propsの型定義 */
+interface Props {
+  className: string
+}
+
+
+export const EyeFilledIcon = (props: Props) => (
   <svg
     aria-hidden="true"
     fill="none"
@@ -9,6 +16,7 @@ export const EyeFilledIcon = () => (
     role="presentation"
     viewBox="0 0 24 24"
     width="1em"
+    className={props.className}
 
   >
     <path

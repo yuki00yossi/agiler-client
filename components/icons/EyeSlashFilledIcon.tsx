@@ -1,5 +1,13 @@
 import React from "react";
-export const EyeSlashFilledIcon = () => (
+
+
+/** Propsの型定義 */
+interface Props {
+  className: string
+}
+
+
+export const EyeSlashFilledIcon = (props: Props) => (
   <svg
     aria-hidden="true"
     fill="none"
