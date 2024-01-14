@@ -1,5 +1,20 @@
 import { tv } from "tailwind-variants";
 
+/**
+ * ページタイトルを格納するDIV要素のスタイル
+ */
+export const titleBox = tv({
+	base: "block w-full",
+	variants: {
+		border: {
+			bottom: " border-b-medium pb-1"
+		}
+	}
+});
+
+/**
+ * ページタイトルのheadingタグのスタイル
+ */
 export const title = tv({
 	base: "tracking-tight inline font-semibold",
 	variants: {
