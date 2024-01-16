@@ -39,36 +39,32 @@ export const siteConfig = {
 	],
 	navMenuItems: [
 		{
-			label: "Profile",
-			href: "/profile",
+			label: "Home",
+			href: "/",
 		},
 		{
-			label: "Dashboard",
-			href: "/dashboard",
-		},
-		{
-			label: "Projects",
+			label: "プロジェクト",
 			href: "/projects",
 		},
 		{
-			label: "Team",
-			href: "/team",
+			label: "チケット",
+			href: "/tickets",
 		},
 		{
-			label: "Calendar",
-			href: "/calendar",
+			label: "ガントチャート",
+			href: "/chart/gant",
 		},
 		{
-			label: "Settings",
-			href: "/settings",
+			label: "フォーラム",
+			href: "/forum",
 		},
 		{
-			label: "Help & Feedback",
+			label: "Wiki",
+			href: "/",
+		},
+		{
+			label: "お問い合わせ・不具合報告",
 			href: "/help-feedback",
-		},
-		{
-			label: "Logout",
-			href: "/logout",
 		},
 	],
 	links: {
